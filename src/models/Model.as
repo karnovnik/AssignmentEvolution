@@ -9,10 +9,11 @@ package models
 	{
 		private const START_IMAGE_COUNT:int		= 9;
 		
+		public var updateSignal:Signal			= new Signal();
+		
 		private var _images:Vector.<IImage>		= null;
 		private var _imageNames:Array			= [];
-		public var updateSignal:Signal			= new Signal();
-	
+			
 		public function Model()
 		{
 			_images = new Vector.<IImage>();
